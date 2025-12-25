@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - PT DEWATA NARAPHADA ALLIANSI</title>
+    <meta name="description" content="Terms and Conditions PT DEWATA NARAPHADA ALLIANSI - Syarat dan Ketentuan Penggunaan Layanan">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #7c3aed;
+            --accent: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #06b6d4 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+            background: var(--light);
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(124, 58, 237, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .company-name {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 100px;
+            padding: 40px 5%;
+            min-height: calc(100vh - 200px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid var(--gradient);
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        .terms-content {
+            margin-bottom: 2rem;
+        }
+
+        .terms-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .terms-section h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .terms-section h3 {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .terms-section p {
+            color: #475569;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .terms-section ul {
+            margin-left: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .terms-section li {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(220, 38, 38, 0.05) 100%);
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .warning-box p {
+            color: #dc2626;
+            font-weight: 500;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .info-box p {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .contact-info {
+            background: var(--gradient-2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Mobile Responsive */
+        .mobile-menu {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .terms-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .company-name {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Table styles */
+        .terms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .terms-table th {
+            background: var(--gradient);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .terms-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #475569;
+        }
+
+        .terms-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .terms-table tr:hover {
+            background: rgba(30, 58, 138, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">DNA</div>
+                <div class="company-name">PT DEWATA NARAPHADA ALLIANSI</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#services">Layanan</a></li>
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+                <li><a href="privacy.html">Privasi</a></li>
+                <li><a href="terms.html">Syarat & Ketentuan</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-file-contract"></i> Terms and Conditions</h1>
+                <p>Syarat dan Ketentuan Penggunaan Layanan PT DEWATA NARAPHADA ALLIANSI</p>
+            </div>
+
+            <div class="terms-content">
+                <div class="warning-box">
+                    <p><strong>PENTING:</strong> Harap baca syarat dan ketentuan ini dengan seksama sebelum menggunakan layanan kami. Dengan menggunakan layanan PT DEWATA NARAPHADA ALLIANSI, Anda menyetujui dan terikat oleh syarat dan ketentuan ini.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-info-circle"></i> Pendahuluan</h2>
+                    <p>Selamat datang di Terms and Conditions PT DEWATA NARAPHADA ALLIANSI. Dokumen ini mengatur penggunaan layanan yang disediakan oleh PT DEWATA NARAPHADA ALLIANSI ("Perusahaan"), sebuah perusahaan yang bergerak dalam bidang perdagangan besar peralatan telekomunikasi.</p>
+                    
+                    <div class="info-box">
+                        <p><strong>PT DEWATA NARAPHADA ALLIANSI</strong> berkomitmen untuk menyediakan layanan terbaik dalam perdagangan peralatan telekomunikasi dengan mematuhi semua peraturan perundang-undangan yang berlaku di Indonesia.</p>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-user-check"></i> Definisi</h2>
+                    <p>Dalam syarat dan ketentuan ini, istilah-istilah berikut memiliki makna sebagai berikut:</p>
+                    
+                    <ul>
+                        <li><strong>"Perusahaan"</strong> adalah PT DEWATA NARAPHADA ALLIANSI</li>
+                        <li><strong>"Pelanggan"</strong> adalah individu atau badan usaha yang menggunakan layanan Perusahaan</li>
+                        <li><strong>"Layanan"</strong> adalah semua produk dan jasa yang disediakan oleh Perusahaan</li>
+                        <li><strong>"Peralatan Telekomunikasi"</strong> adalah semua perangkat dan perlengkapan yang digunakan untuk keperluan telekomunikasi</li>
+                        <li><strong>"Website"</strong> adalah situs web resmi Perusahaan</li>
+                        <li><strong>"Transaksi"</strong> adalah proses pembelian dan penjualan peralatan telekomunikasi</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-shopping-cart"></i> Syarat Penggunaan Layanan</h2>
+                    <p>Untuk menggunakan layanan kami, Anda harus memenuhi syarat-syarat berikut:</p>
+                    
+                    <h3>Usia dan Kapasitas Hukum</h3>
+                    <ul>
+                        <li>Minimal 18 tahun atau telah menikah</li>
+                        <li>Memiliki kapasitas hukum yang sah untuk melakukan transaksi</li>
+                        <li>Tidak berada dalam status pailit atau likuidasi</li>
+                    </ul>
+
+                    <h3>Persyaratan Dokumen</h3>
+                    <ul>
+                        <li>Identitas diri yang sah (KTP/SIM/Paspor)</li>
+                        <li>NPWP (untuk transaksi di atas batas tertentu)</li>
+                        <li>Dokumen perizinan usaha (untuk badan usaha)</li>
+                        <li>Bukti alamat yang valid</li>
+                    </ul>
+
+                    <h3>Kelayakan Kredit (jika diperlukan)</h3>
+                    <ul>
+                        <li>Memiliki riwayat kredit yang baik</li>
+                        <li>Mampu menyediakan jaminan jika diperlukan</li>
+                        <li>Melewati proses verifikasi yang ditetapkan Perusahaan</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-box"></i> Produk dan Layanan</h2>
+                    <p>Perusahaan menyediakan berbagai produk dan layanan dalam bidang telekomunikasi:</p>
+                    
+                    <table class="terms-table">
+                        <thead>
+                            <tr>
+                                <th>Kategori Produk</th>
+                                <th>Deskripsi</th>
+                                <th>Garansi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Peralatan Satelit</td>
+                                <td>Antena, receiver, dan perangkat pendukung</td>
+                                <td>1-2 tahun</td>
+                            </tr>
+                            <tr>
+                                <td>Infrastruktur Jaringan</td>
+                                <td>Tower, kabel, dan perangkat keras jaringan</td>
+                                <td>2-5 tahun</td>
+                            </tr>
+                            <tr>
+                                <td>Peralatan Wireless</td>
+                                <td>Access point, router, dan perangkat WiFi</td>
+                                <td>1-3 tahun</td>
+                            </tr>
+                            <tr>
+                                <td>Server dan Storage</td>
+                                <td>Server enterprise dan sistem penyimpanan</td>
+                                <td>3-5 tahun</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-handshake"></i> Proses Transaksi</h2>
+                    
+                    <h3>Pemesanan</h3>
+                    <ul>
+                        <li>Pemesanan dapat dilakukan melalui website, email, telepon, atau langsung di kantor</li>
+                        <li>Perusahaan akan mengirimkan penawaran harga resmi</li>
+                        <li>Pelanggan harus mengkonfirmasi pemesanan secara tertulis</li>
+                        <li>Perusahaan berhak menolak pemesanan tanpa memberikan alasan</li>
+                    </ul>
+
+                    <h3>Pembayaran</h3>
+                    <ul>
+                        <li>Pembayaran dapat dilakukan tunai, transfer bank, atau kartu kredit</li>
+                        <li>Untuk transaksi besar, tersedia opsi pembayaran cicilan</li>
+                        <li>Pembayaran dianggap sah setelah dana diterima penuh di rekening Perusahaan</li>
+                        <li>Biaya tambahan mungkin berlaku untuk metode pembayaran tertentu</li>
+                    </ul>
+
+                    <h3>Pengiriman dan Instalasi</h3>
+                    <ul>
+                        <li>Pengiriman akan dilakukan setelah pembayaran diterima penuh</li>
+                        <li>Waktu pengiriman tergantung pada lokasi dan ketersediaan stok</li>
+                        <li>Layanan instalasi tersedia dengan biaya tambahan</li>
+                        <li>Perusahaan tidak bertanggung jawab atas keterlambatan karena force majeure</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-shield-alt"></i> Kebijakan Garansi dan Pengembalian</h2>
+                    
+                    <h3>Garansi Produk</h3>
+                    <ul>
+                        <li>Semua produk baru dilengkapi garansi resmi dari produsen</li>
+                        <li>Garansi tidak berlaku untuk kerusakan akibat kesalahan penggunaan</li>
+                        <li>Klaim garansi harus disertai dengan bukti pembelian yang sah</li>
+                        <li>Perusahaan akan membantu proses klaim garansi ke produsen</li>
+                    </ul>
+
+                    <h3>Pengembalian Produk</h3>
+                    <ul>
+                        <li>Pengembalian dapat dilakukan dalam 7 hari sejak tanggal pembelian</li>
+                        <li>Produk harus dalam kondisi asli dan tidak rusak</li>
+                        <li>Biaya pengiriman pengembalian ditanggung oleh Pelanggan</li>
+                        <li>Pengembalian uang akan diproses dalam 14 hari kerja</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <p>Produk yang sudah dibuka atau digunakan tidak dapat dikembalikan kecuali ada cacat produksi yang terdeteksi.</p>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-user-shield"></i> Hak dan Kewajiban Pelanggan</h2>
+                    
+                    <h3>Hak Pelanggan</h3>
+                    <ul>
+                        <li>Mendapatkan produk yang sesuai dengan spesifikasi yang disepakati</li>
+                        <li>Mendapatkan garansi sesuai ketentuan yang berlaku</li>
+                        <li>Mendapatkan layanan purnajual yang memadai</li>
+                        <li>Mendapatkan informasi yang transparan tentang produk dan harga</li>
+                        <li>Mendapatkan perlindungan data pribadi sesuai kebijakan privasi</li>
+                    </ul>
+
+                    <h3>Kewajiban Pelanggan</h3>
+                    <ul>
+                        <li>Memberikan informasi yang akurat dan lengkap</li>
+                        <li>Melakukan pembayaran sesuai dengan kesepakatan</li>
+                        <li> menggunakan produk sesuai dengan petunjuk penggunaan</li>
+                        <li>Menjaga kerahasiaan informasi akses jika diperlukan</li>
+                        <li>Mematuhi semua syarat dan ketentuan yang berlaku</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-building"></i> Hak dan Kewajiban Perusahaan</h2>
+                    
+                    <h3>Hak Perusahaan</h3>
+                    <ul>
+                        <li>Memverifikasi informasi yang diberikan oleh Pelanggan</li>
+                        <li>Menolak transaksi yang mencurigakan atau melanggar hukum</li>
+                        <li>Mengubah harga dan syarat layanan dengan pemberitahuan sebelumnya</li>
+                        <li>Menghentikan layanan jika Pelanggan melanggar syarat dan ketentuan</li>
+                        <li>Melakukan pemeliharaan dan peningkatan layanan</li>
+                    </ul>
+
+                    <h3>Kewajiban Perusahaan</h3>
+                    <ul>
+                        <li>Menyediakan produk berkualitas sesuai standar industri</li>
+                        <li>Memberikan informasi yang akurat tentang produk</li>
+                        <li>Melindungi data pribadi Pelanggan</li>
+                        <li>Memberikan garansi dan layanan purnajual</li>
+                        <li>Mematuhi semua peraturan perundang-undangan yang berlaku</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-gavel"></i> Kekayaan Intelektual</h2>
+                    <p>Semua konten, merek dagang, dan kekayaan intelektual yang terdapat dalam website dan layanan kami adalah milik PT DEWATA NARAPHADA ALLIANSI atau pihak ketiga yang telah memberikan izin.</p>
+                    
+                    <ul>
+                        <li>Anda tidak boleh menyalin, mendistribusikan, atau menggunakan konten tanpa izin tertulis</li>
+                        <li>Merek dagang dan logo Perusahaan dilindungi oleh hukum</li>
+                        <li>Pelanggaran hak kekayaan intelektual akan ditindak sesuai hukum</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Pembatasan Tanggung Jawab</h2>
+                    <p>Perusahaan tidak bertanggung jawab atas:</p>
+                    
+                    <ul>
+                        <li>Kerugian tidak langsung, insidental, atau konsekuensial</li>
+                        <li>Kerugian akibat penggunaan produk yang tidak sesuai</li>
+                        <li>Keterlambatan pengiriman karena force majeure</li>
+                        <li>Kerusakan akibat bencana alam atau peristiwa di luar kendali</li>
+                        <li>Kehilangan data atau informasi selama transmisi</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <p>Maksimal tanggung jawab Perusahaan adalah sebesar nilai transaksi yang terkait dengan klaim tersebut.</p>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-ban"></i> Larangan</h2>
+                    <p>Pelanggan dilarang untuk:</p>
+                    
+                    <ul>
+                        <li>Menggunakan layanan untuk kegiatan ilegal atau melanggar hukum</li>
+                        <li>Memberikan informasi palsu atau menyesatkan</li>
+                        <li>Mencoba meretas atau merusak sistem Perusahaan</li>
+                        <li>Mendistribusikan virus atau malware melalui layanan kami</li>
+                        <li>Melakukan spam atau penipuan</li>
+                        <li>Melanggar hak kekayaan intelektual pihak lain</li>
+                        <li>Menyalahgunakan produk untuk tujuan yang tidak sesuai</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-sync-alt"></i> Perubahan Syarat dan Ketentuan</h2>
+                    <p>Perusahaan berhak mengubah syarat dan ketentuan ini sewaktu-waktu. Perubahan akan diberitahukan melalui:</p>
+                    
+                    <ul>
+                        <li>Pengumuman di website resmi Perusahaan</li>
+                        <li>Email kepada Pelanggan terdaftar</li>
+                        <li>Notifikasi langsung untuk transaksi tertentu</li>
+                    </ul>
+
+                    <p>Penggunaan layanan setelah perubahan berarti Anda menyetujui syarat dan ketentuan yang diperbarui.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-contract"></i> Terminasi</h2>
+                    <p>Perusahaan dapat menghentikan layanan jika:</p>
+                    
+                    <ul>
+                        <li>Pelanggan melanggar syarat dan ketentuan yang berlaku</li>
+                        <li>Pelanggan terlibat dalam kegiatan ilegal</li>
+                        <li>Terdapat indikasi penipuan atau kecurangan</li>
+                        <li>Pelanggan tidak memenuhi kewajiban pembayaran</li>
+                        <li>Adanya force majeure yang mempengaruhi operasional</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-balance-scale"></i> Penyelesaian Sengketa</h2>
+                    <p>Semua sengketa yang timbul dari penggunaan layanan kami akan diselesaikan melalui:</p>
+                    
+                    <ol>
+                        <li><strong>Musyawarah dan Mufakat:</strong> Upaya damah terlebih dahulu</li>
+                        <li><strong>Mediasi:</strong> Melalui mediator netral jika musyawarah gagal</li>
+                        <li><strong>Arbitrase:</strong> Melalui Badan Arbitrase Nasional Indonesia (BANI)</li>
+                        <li><strong>Pengadilan:</strong> Pengadilan Negeri Jakarta Selatan sebagai yurisdiksi terakhir</li>
+                    </ol>
+
+                    <div class="info-box">
+                        <p>Hukum yang berlaku adalah hukum Republik Indonesia dan semua sengketa akan diselesaikan dalam bahasa Indonesia.</p>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-info"></i> Informasi Kontak</h2>
+                    <p>Jika Anda memiliki pertanyaan tentang syarat dan ketentuan ini, silakan hubungi kami:</p>
+                    
+                    <ul>
+                        <li><strong>Email:</strong> dewataalliansi@outlook.co.id</li>
+                        <li><strong>Telepon:</strong> 082382466172</li>
+                        <li><strong>Alamat:</strong> GEDUNG GRAHA PRATAMA LT.18 JL. LETJEN MT.HARYONO KAV.15, Jakarta Selatan</li>
+                        <li><strong>Website:</strong> www.dewatanaraphada-alliansi.com</li>
+                    </ul>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-calendar-check"></i> Efektif Berlaku</h2>
+                    <p>Syarat dan ketentuan ini berlaku efektif sejak tanggal 1 Januari 2024 dan akan terus berlaku hingga ada perubahan atau penggantian.</p>
+                    
+                    <p>Dengan menggunakan layanan PT DEWATA NARAPHADA ALLIANSI, Anda menyatakan telah membaca, memahami, dan menyetujui semua syarat dan ketentuan yang tercantum dalam dokumen ini.</p>
+                </div>
+
+                <div class="contact-info">
+                    <h3><i class="fas fa-contact"></i> Hubungi Kami</h3>
+                    <p>Untuk informasi lebih lanjut tentang syarat dan ketentuan kami, silakan hubungi:</p>
+                    <p><strong>PT DEWATA NARAPHADA ALLIANSI</strong></p>
+                    <p>Email: dewataalliansi@outlook.co.id</p>
+                    <p>Telepon: 082382466172</p>
+                    <p>Alamat: GEDUNG GRAHA PRATAMA LT.18 JL. LETJEN MT.HARYONO KAV.15, Jakarta Selatan</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Beranda</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+        <p>&copy; 2024 PT DEWATA NARAPHADA ALLIANSI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '100%';
+            navLinks.style.left = '0';
+            navLinks.style.right = '0';
+            navLinks.style.background = 'var(--gradient)';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.padding = '1rem';
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, rgba(30, 58, 138, 0.98) 0%, rgba(124, 58, 237, 0.98) 100%)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(124, 58, 237, 0.95) 100%)';
+            }
+        });
+    </script>
+</body>
+</html>

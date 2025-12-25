@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PT DEWATA NARAPHADA ALLIANSI</title>
+    <meta name="description" content="Privacy Policy PT DEWATA NARAPHADA ALLIANSI - Kebijakan Privasi untuk Perlindungan Data Pelanggan">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #7c3aed;
+            --accent: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #06b6d4 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+            background: var(--light);
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(124, 58, 237, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .company-name {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 100px;
+            padding: 40px 5%;
+            min-height: calc(100vh - 200px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid var(--gradient);
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        .policy-content {
+            margin-bottom: 2rem;
+        }
+
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .policy-section h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-section h3 {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .policy-section p {
+            color: #475569;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .policy-section ul {
+            margin-left: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section li {
+            color: #475569;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .highlight-box p {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .contact-info {
+            background: var(--gradient-2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Mobile Responsive */
+        .mobile-menu {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .policy-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .company-name {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">DNA</div>
+                <div class="company-name">PT DEWATA NARAPHADA ALLIANSI</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#services">Layanan</a></li>
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+                <li><a href="privacy.html">Privasi</a></li>
+                <li><a href="terms.html">Syarat & Ketentuan</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+                <p>Kebijakan Privasi PT DEWATA NARAPHADA ALLIANSI</p>
+            </div>
+
+            <div class="policy-content">
+                <div class="policy-section">
+                    <h2><i class="fas fa-info-circle"></i> Pendahuluan</h2>
+                    <p>Selamat datang di Privacy Policy PT DEWATA NARAPHADA ALLIANSI. Kami sangat memahami pentingnya privasi dan keamanan data pribadi Anda. Kebijakan ini menjelaskan bagaimana kami mengumpulkan, menggunakan, melindungi, dan membagikan informasi pribadi Anda saat menggunakan layanan kami.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>PT DEWATA NARAPHADA ALLIANSI</strong> berkomitmen untuk melindungi privasi Anda dan memastikan bahwa data pribadi Anda diproses secara aman, sah, dan transparan sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia.</p>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-database"></i> Data yang Kami Kumpulkan</h2>
+                    <p>Kami dapat mengumpulkan berbagai jenis informasi pribadi Anda, antara lain:</p>
+                    
+                    <h3>Informasi Identitas Pribadi</h3>
+                    <ul>
+                        <li>Nama lengkap</li>
+                        <li>Alamat email</li>
+                        <li>Nomor telepon</li>
+                        <li>Alamat perusahaan atau rumah</li>
+                        <li>Posisi jabatan</li>
+                    </ul>
+
+                    <h3>Informasi Bisnis</h3>
+                    <ul>
+                        <li>Nama perusahaan</li>
+                        <li>Bidang usaha</li>
+                        <li>Kebutuhan peralatan telekomunikasi</li>
+                        <li>Informasi pembayaran</li>
+                        <li>Riwayat transaksi</li>
+                    </ul>
+
+                    <h3>Informasi Teknis</h3>
+                    <ul>
+                        <li>Alamat IP</li>
+                        <li>Data browser dan perangkat</li>
+                        <li>Informasi log penggunaan website</li>
+                        <li>Cookie dan data pelacakan</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-cogs"></i> Penggunaan Data</h2>
+                    <p>Kami menggunakan data pribadi Anda untuk tujuan-tujuan berikut:</p>
+                    
+                    <ul>
+                        <li><strong>Penyediaan Layanan:</strong> Untuk memproses pesanan dan menyediakan peralatan telekomunikasi yang Anda butuhkan</li>
+                        <li><strong>Komunikasi:</strong> Untuk menghubungi Anda terkait pesanan, penawaran, dan informasi layanan</li>
+                        <li><strong>Peningkatan Layanan:</strong> Untuk menganalisis dan meningkatkan kualitas produk dan layanan kami</li>
+                        <li><strong>Keamanan:</strong> Untuk melindungi keamanan sistem dan mencegah penipuan</li>
+                        <li><strong>Kepatuhan Hukum:</strong> Untuk memenuhi kewajiban hukum dan peraturan yang berlaku</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-share-alt"></i> Pembagian Data</h2>
+                    <p>Kami tidak menjual, menyewakan, atau membagikan data pribadi Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali dalam kondisi berikut:</p>
+                    
+                    <ul>
+                        <li><strong>Partner Bisnis:</strong> Dengan mitra terpercaya yang membantu kami menyediakan layanan</li>
+                        <li><strong>Otoritas Hukum:</strong> Saat diwajibkan oleh hukum atau permintaan resmi dari pihak berwenang</li>
+                        <li><strong>Transfer Bisnis:</strong> Dalam kasus merger, akuisisi, atau penjualan aset perusahaan</li>
+                        <li><strong>Keamanan:</strong> Untuk melindungi hak, properti, atau keselamatan kami atau pihak lain</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-shield-virus"></i> Keamanan Data</h2>
+                    <p>PT DEWATA NARAPHADA ALLIANSI menerapkan berbagai langkah keamanan untuk melindungi data pribadi Anda:</p>
+                    
+                    <ul>
+                        <li>Enkripsi data saat transmisi dan penyimpanan</li>
+                        <li>Akses terbatas ke data pribadi</li>
+                        <li>Firewall dan sistem keamanan canggih</li>
+                        <li>Regular security audit dan update sistem</li>
+                        <li>Pelatihan staf tentang keamanan data</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p>Meskipun kami telah menerapkan langkah-langkah keamanan yang memadai, kami tidak dapat menjamin keamanan data 100% karena risiko yang melekat pada transmisi data melalui internet.</p>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-user-cog"></i> Hak Anda</h2>
+                    <p>Sebagai pemilik data, Anda memiliki hak-hak berikut:</p>
+                    
+                    <ul>
+                        <li><strong>Hak Akses:</strong> Hak untuk mengetahui data pribadi yang kami simpan tentang Anda</li>
+                        <li><strong>Hak Koreksi:</strong> Hak untuk memperbaiki data pribadi yang tidak akurat</li>
+                        <li><strong>Hak Penghapusan:</strong> Hak untuk meminta penghapusan data pribadi Anda</li>
+                        <li><strong>Hak Pembatasan:</strong> Hak untuk membatasi pemrosesan data pribadi Anda</li>
+                        <li><strong>Hak Portabilitas:</strong> Hak untuk menerima data pribadi Anda dalam format terstruktur</li>
+                        <li><strong>Hak Penolakan:</strong> Hak untuk menolak pemrosesan data pribadi Anda</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-cookie"></i> Kebijakan Cookie</h2>
+                    <p>Website kami menggunakan cookie untuk meningkatkan pengalaman pengguna:</p>
+                    
+                    <ul>
+                        <li><strong>Cookie Esensial:</strong> Diperlukan untuk fungsi dasar website</li>
+                        <li><strong>Cookie Performa:</strong> Membantu kami memahami cara penggunaan website</li>
+                        <li><strong>Cookie Fungsional:</strong> Mengingat preferensi dan pengaturan Anda</li>
+                        <li><strong>Cookie Pemasaran:</strong> Digunakan untuk menampilkan iklan yang relevan</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-clock"></i> Retensi Data</h2>
+                    <p>Kami menyimpan data pribadi Anda selama diperlukan untuk tujuan pengumpulan data, kecuali diwajibkan oleh hukum untuk menyimpannya lebih lama. Faktor yang menentukan periode retensi meliputi:</p>
+                    
+                    <ul>
+                        <li>Jenis dan tujuan pengumpulan data</li>
+                        <li>Kebutuhan hukum dan peraturan</li>
+                        <li>Persetujuan yang Anda berikan</li>
+                        <li>Kebutuhan operasional bisnis</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-globe"></i> Transfer Data Internasional</h2>
+                    <p>Data pribadi Anda akan disimpan dan diproses di Indonesia. Kami tidak akan mentransfer data pribadi Anda ke luar negeri tanpa persetujuan Anda dan memastikan perlindungan yang memadai sesuai dengan peraturan yang berlaku.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-child"></i> Perlindungan Data Anak</h2>
+                    <p>Layanan kami tidak ditujukan untuk anak-anak di bawah 18 tahun. Kami tidak sengaja mengumpulkan data pribadi dari anak-anak. Jika kami mengetahui telah mengumpulkan data dari anak, kami akan segera menghapusnya.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2><i class="fas fa-sync"></i> Pembaruan Kebijakan</h2>
+                    <p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan diberitahukan melalui website atau email Anda. Penggunaan layanan kami setelah perubahan berarti Anda menyetujui kebijakan yang diperbarui.</p>
+                </div>
+
+                <div class="contact-info">
+                    <h3><i class="fas fa-contact"></i> Hubungi Kami</h3>
+                    <p>Jika Anda memiliki pertanyaan tentang kebijakan privasi ini atau ingin melaksanakan hak Anda, silakan hubungi kami:</p>
+                    <p><strong>PT DEWATA NARAPHADA ALLIANSI</strong></p>
+                    <p>Email: dewataalliansi@outlook.co.id</p>
+                    <p>Telepon: 082382466172</p>
+                    <p>Alamat: GEDUNG GRAHA PRATAMA LT.18 JL. LETJEN MT.HARYONO KAV.15, Jakarta Selatan</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Beranda</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+        <p>&copy; 2024 PT DEWATA NARAPHADA ALLIANSI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '100%';
+            navLinks.style.left = '0';
+            navLinks.style.right = '0';
+            navLinks.style.background = 'var(--gradient)';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.padding = '1rem';
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, rgba(30, 58, 138, 0.98) 0%, rgba(124, 58, 237, 0.98) 100%)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(124, 58, 237, 0.95) 100%)';
+            }
+        });
+    </script>
+</body>
+</html>
